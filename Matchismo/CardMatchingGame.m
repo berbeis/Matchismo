@@ -15,13 +15,13 @@
 
 @implementation CardMatchingGame
 
-- (NSMutableArray *) cards
+- (NSMutableArray *)cards
 {
     if (!_cards) _cards = [[NSMutableArray alloc]init];
     return _cards;
 }
 
--(instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck
+- (instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck
 {
     self = [super init]; //super's designated initializer
     
